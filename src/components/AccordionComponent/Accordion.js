@@ -13,7 +13,7 @@ function Accordion () {
             item.classList.remove('open');
         })
         element.classList.toggle('open');
-        //setIsOpen(current => !current); provba
+        //setIsOpen(current => !current); 
     };
 
     return (
