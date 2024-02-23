@@ -1,0 +1,35 @@
+.navigation-menu--float-link {
+    display: none;
+    &__labels{
+        text-align: center;
+        list-style-type: none;
+        padding: 1rem;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        bottom: -200%;
+        background: black;
+        border: 1px solid rgba(0, 0, 0, 0.45);
+        border-radius: 20px;
+        z-index: 99;
+
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s ease-in-out;
+    }
+
+    &.open {
+        .navigation-menu--float-link {
+            &__labels {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navigation-menu--float-link {
+        display: block;
+    }
+}

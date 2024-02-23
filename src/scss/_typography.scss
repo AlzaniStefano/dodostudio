@@ -1,0 +1,87 @@
+@import './mixins';
+
+@font-face {
+    font-family: 'AlaskaBeta-BlackContrast';
+    src: url("/src/font/AlaskaBeta-BlackContrast.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'AlaskaBeta-RegularContrast';
+    src: url("/src/font/AlaskaBeta-RegularContrast.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'AlaskaBeta-BoldContrast';
+    src: url("/src/font/AlaskaBeta-BoldContrast.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'AlaskaBeta-LightContrast';
+    src: url("/src/font/AlaskaBeta-LightContrast.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'AlaskaBeta-ThinContrast';
+    src: url("/src/font/AlaskaBeta-ThinContrast.otf") format('opentype');
+}
+
+
+
+h1 {
+    font-family: AlaskaBeta-BoldContrast;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+h2 {
+    font-family: AlaskaBeta-LightContrast;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    margin: 0;
+}
+
+h3, h4 {
+    font-family: AlaskaBeta-LightContrast;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    font-size: 43px;
+}
+
+p, ul, li {
+    font-family: AlaskaBeta-LightContrast;
+    margin: 0;
+}
+
+span {
+    font-family: AlaskaBeta-LightContrast;
+}
+
+.bold {
+    font-family: AlaskaBeta-BoldContrast;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    h3, h4 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    h3, h4 {
+        font-size: 25px;
+    }
+}

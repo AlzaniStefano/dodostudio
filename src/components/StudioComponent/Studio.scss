@@ -1,0 +1,46 @@
+.studio {
+  &--title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  &--description {
+    margin: 2rem 0;
+    column-count: 2;
+    text-align: left;
+  }
+
+  .link {
+    color: inherit;
+    bottom: 0;
+    text-decoration: none;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .studio {
+    &--title {
+    }
+  
+    &--description {
+      column-count: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .studio {
+    &--title {
+    }
+  
+    &--description {
+    }
+  }
+}

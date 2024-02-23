@@ -1,0 +1,27 @@
+.marquee {
+    background-color: #D9D9D9;
+    padding: .5rem 0;
+    margin: 5rem 0;
+    transform: rotate(-3deg);
+    font-size: 4rem;
+    
+    &--content {
+        font-family: AlaskaBeta-LightContrast;
+        color: #000000;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .marquee {
+        font-size: 3rem;
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .marquee {
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}

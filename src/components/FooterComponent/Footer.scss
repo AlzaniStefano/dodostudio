@@ -1,0 +1,163 @@
+footer {
+  padding: 2rem;
+
+  .links-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+
+  .hey {
+    text-align: right;
+    grid-column: 1/4;
+
+    span {
+      font-family: AlaskaBeta-BlackContrast;
+      font-size: 200px;
+    }
+  }
+
+  .contact-us {
+    &_title {
+      font-family: AlaskaBeta-RegularContrast;
+    }
+
+    &_list {
+      padding: 0;
+
+      li {
+        font-family: AlaskaBeta-LightContrast;
+        list-style-type: none;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  .logo-copy {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    .copy {
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 2rem;
+
+    .links-container {
+      grid-template-columns: unset;
+      gap: 3rem;
+    }
+
+    .hey {
+      text-align: left;
+      grid-column: auto;
+
+      span {
+        font-size: 140px;
+      }
+    }
+
+    .contact-us {
+      &_title {
+      }
+
+      &_list {
+        padding: 0;
+
+        li {
+          font-family: AlaskaBeta-LightContrast;
+          list-style-type: none;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+
+    .logo-copy {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+
+      .copy {
+        ul {
+          display: flex;
+          flex-direction: column;
+          row-gap: 1rem;
+          padding: 0;
+
+          li {
+            list-style: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    padding: 2rem;
+
+    .links-container {
+      grid-template-columns: unset;
+      gap: 3rem;
+    }
+
+    .hey {
+      text-align: left;
+      grid-column: auto;
+
+      span {
+        font-size: 80px;
+      }
+    }
+
+    .contact-us {
+      &_title {
+      }
+
+      &_list {
+        padding: 0;
+
+        li {
+          font-family: AlaskaBeta-LightContrast;
+          list-style-type: none;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+
+    .logo-copy {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+
+      .copy {
+        ul {
+          display: flex;
+          flex-direction: column;
+          row-gap: 1rem;
+          padding: 0;
+
+          li {
+            list-style: none;
+          }
+        }
+      }
+    }
+  }
+}

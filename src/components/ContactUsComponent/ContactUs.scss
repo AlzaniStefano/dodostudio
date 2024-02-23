@@ -1,0 +1,87 @@
+.contact-us {
+    &--box {
+        display: flex;
+        justify-content: space-between;
+
+        &_left {
+            position: relative;
+
+            .separator {
+                display: flex;
+                align-items: center;
+            
+                .line {
+                    width: 200px;
+                    height: 2px;
+                    background-color: #FFFFFF;
+                }
+                .rhombus {
+                    width: 20px;
+                    height: 20px;
+                    background: #FFFFFF;
+                    transform: rotate(45deg);
+                }
+            }
+
+            .link {
+                position: absolute;
+                color: inherit;
+                bottom: 0;
+                text-decoration: none;
+            }
+        }
+
+        &_right {
+            font-family: AlaskaBeta-RegularContrast;
+            flex: 1;
+        }
+    }
+
+    &__title {
+        margin: .5rem 0;
+    }
+}
+
+
+  
+@media screen and (max-width: 768px) {
+    .contact-us {
+        
+        &--box {
+            flex-direction: column;
+            row-gap: 2rem;
+            &_left {
+                .separator {
+                    margin-left: -2rem;
+                }
+    
+                .link {
+                    position: relative;
+                }
+            }
+    
+            &_right {
+            }
+        }
+    }
+  }
+  
+@media screen and (max-width: 576px) {
+    .contact-us {
+        
+        &--box {
+            flex-direction: column;
+            row-gap: 1rem;
+
+            &_left {
+
+                .link {
+                }
+            }
+
+            &_right {
+            }
+        }
+    }
+}
+
